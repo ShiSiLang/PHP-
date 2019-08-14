@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gb2312"?>
+<object name="商品">
+	<book>
+		<computerbook type="PHP程序员必备工具">PHP函数参考大全</computerbook>
+	</book>
+</object>

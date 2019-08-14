@@ -1,0 +1,12 @@
+<html>
+<head>
+{*  设置标题名称  *}
+<title>{ $title }</title>
+</head>
+<body>
+{*  使用get变量获取url中的变量值(ex: http://localhost/tm/sl/21/3/index.php?type=computer)  *}
+变量type的值是：{ $smarty.get.type }<br />
+当前路径为：{ $smarty.server.PHP_SELF}<br />
+当前时间为：{$smarty.now}
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="css/style.css" />
+<title>{$title}</title>
+</head>
+<body>
+<center>
+<table width="636" border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="33" align="left" valign="middle"><img src="images/shop_14.JPG" width="643" height="33" /></td>
+  </tr>
+  <tr>
+    <td height="132" align="left" valign="middle">  
+	
+	{if $istr=="T"}
+	
+      <table width="380" height="134" border="0" cellspacing="0" cellpadding="0">
+         {php}
+      $i=1; 
+      {/php}
+      {section name=shopping_id loop=$shopping}
+	      <tr>
+            <td width="135" rowspan="5" align="center" valign="middle"><img src="{$shopping[shopping_id].pics}" width="95" height="100" alt="{$shopping[shopping_id].name}" style="border: 1px solid #f0f0f0;" /></td>
+            <td height="35">图书名称：{$shopping[shopping_id].name}</td>
+            </tr>
+          <tr>
+            <td height="23">图书品牌：{$shopping[shopping_id].brand}</td>
+            </tr>
+          <tr>
+            <td width="160" height="23">剩余数量：{$shopping[shopping_id].stocks}</td>
+            </tr>
+          <tr>
+            <td height="23">市场价：<font color="red">{$shopping[shopping_id].m_price}&nbsp;元</font></td>
+            </tr>
+          <tr>
+            <td height="30">会员价格：<font color="#FF0000">{$shopping[shopping_id].v_price}&nbsp;元</font></td>
+            </tr>
+		      {php}
+      $i++; 
+      {/php}
+      {/section}
+      </table>
+		<table width="100%" height="22" border="0" align="center" cellpadding="0" cellspacing="0">
+               <tr>
+                 <td align="center" class="STYLE4">&nbsp;{$showpage}</td>
+               </tr>
+      </table>
+      <hr style="border: 1px solid #f0f0f0;" />
+	 {/if}
+ {if $iscommo=="F" && $istr=="F"}
+ <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#58BAE9">
+  <tr>
+    <td bgcolor="#FFFFFF"><div align="center"><font color="#FF0000">无图书</font></div></td>
+  </tr>
+</table>
+{/if}
+   
+	  
+    </td>
+  </tr>
+  <tr>
+    <td height="25">&nbsp;</td>
+  </tr>
+</table>
+</center>
+</body>
+</html>

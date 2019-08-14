@@ -1,0 +1,91 @@
+<switch name="Think.get.handle">
+	<case value="insert">
+<form name="form1" method="post" action="__URL__/elementary?type_link=elementary&handle=insert">
+<table width="750" border="1" cellspacing="1" cellpadding="1">
+  <tr>
+    <td colspan="2" align="center">初级类别添加</td>
+  </tr>
+  <tr>
+    <td align="right">中级类别</td>
+    <td>
+    <select name="middleid" id="middleid">
+      <option selected="selected">请选择</option>
+   <foreach name="middledata" item="resultmiddle" >
+		<option value="{$resultmiddle.id}">{$resultmiddle.ChineseName}</option>
+    </foreach>
+    </select></td>
+  </tr>
+  <tr>
+    <td width="178" align="right">中文名称</td>
+    <td width="559"><input name="ChineseName" type="text" id="ChineseName" size="40"></td>
+  </tr>
+  <tr>
+    <td align="right">英文名称</td>
+    <td><input name="EnglishName" type="text" id="EnglishName" size="40"></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td><input type="submit" name="button" id="button" value="提交">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="reset" name="button2" id="button2" value="重置"></td>
+  </tr>
+</table>
+</form>
+    </case>
+	<case value="admin">
+     <table width="750" border="1" cellspacing="1" cellpadding="1">
+        <tr>
+          <td>ID</td>
+          <td>中文名称</td>
+          <td>英文名称</td>
+          <td>所属类别</td>
+           <td>操作</td>
+        </tr>
+        <foreach name="list" item="result" >
+       <tr>
+          <td>{$result.id}</td>
+          <td>{$result.ChineseName}</td>
+          <td>{$result.EnglishName}</td>
+          <td>
+	<foreach name="middledata" item="resultmiddle" >
+    	<eq name="resultmiddle.id" value="$result.middleid">
+       {$resultmiddle.ChineseName}  
+        </eq>
+   	</foreach></td>
+          <td><a href="__URL__/deleteelementary?type_link={$Think.get.type_link }&handle=admin&link_id={$result.id}">删除</a></td>
+        </tr>
+        </foreach>
+        <tr>
+          <td colspan="5">{$page}</td>
+        </tr>
+      </table>
+</case>
+	<default  />
+   <table width="750" border="1" cellspacing="1" cellpadding="1">
+        <tr>
+          <td>ID</td>
+          <td>中文名称</td>
+          <td>英文名称</td>
+          <td>所属类别</td>
+           <td>操作</td>
+        </tr>
+        <foreach name="list" item="result" >
+       <tr>
+          <td>{$result.id}</td>
+          <td>{$result.ChineseName}</td>
+          <td>{$result.EnglishName}</td>
+          <td>
+	<foreach name="middledata" item="resultmiddle" >
+    	<eq name="resultmiddle.id" value="$result.middleid">
+       {$resultmiddle.ChineseName}  
+        </eq>
+   	</foreach></td>
+          <td><a href="__URL__/deleteelementary?type_link={$Think.get.type_link }&handle=admin&link_id={$result.id}">删除</a></td>
+        </tr>
+        </foreach>
+        <tr>
+          <td colspan="5">{$page}</td>
+        </tr>
+      </table>
+</switch>
+

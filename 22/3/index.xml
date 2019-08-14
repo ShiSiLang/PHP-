@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<外语图书 xmlns:frn="http://www.bccd.com/foreign">
+	<frn:English>
+		<frn:书名>许国璋英语</frn:书名>
+		<frn:价格 货币种类="RMB" 单位="4本">80.00</frn:价格>
+		<frn:出版时间>1996-05-10</frn:出版时间>
+	</frn:English>
+</外语图书>

@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+form{
+	margin:100px 400px;
+	width:300px;
+	height:80px;
+	font-family: "楷体_gb2312";
+}
+.one{
+	width:140px;
+	border:1px solid #30ADEE;
+	margin-top:10px;
+	margin-left:10px;
+}
+.two{
+	border:1px solid #30ADEE;
+	background-color: white;
+	font-family: "楷体_gb2312";
+	margin-top:10px
+}
+div{
+	border:3px solid #30ADEE;
+	padding:10px;
+}
+span{
+	font-family: "文鼎霹雳体";
+	font-size: 26px;
+}

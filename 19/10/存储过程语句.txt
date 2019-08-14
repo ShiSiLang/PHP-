@@ -1,0 +1,7 @@
+drop procedure if exists pro_reg;
+delimiter //
+create procedure pro_reg (in nc varchar(80), in pwd varchar(80), in email varchar(80),in address varchar(50))
+begin
+insert into tb_reg (name, pwd ,email ,address) values (nc, pwd, email, address);
+end;
+//

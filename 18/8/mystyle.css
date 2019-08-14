@@ -1,0 +1,70 @@
+/* CSS Document */
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.a:link {
+	color: #CCFF33;
+	text-decoration: none;
+}
+.a:visited {
+	color: #FFCC00;
+	text-decoration: none;
+}
+.a:hover {
+	color: #00FF99;
+	text-decoration: none;
+}
+.a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.c_td {
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #4279C6;
+}
+.top {
+	background-color: #ADD7F7;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #4279C6;
+	border-left-color: #4279C6;
+}
+.m_td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #4279C6;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #4279C6;
+	border-left-color: #4279C6;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#content {
+	font-size: 12px;
+	color: #999999;
+}
+#h_color {
+	border: 1px solid #4279C6;
+}

@@ -1,0 +1,28 @@
+#searchtxt {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	height: 18px;
+	width: 175px;
+	border: 1px solid #999999;
+}
+#s_search {
+
+	background-image: url(../images/search.JPG);
+
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 63px;
+	border: 0px dashed #000000;
+}
+#h_search {
+
+	background-image: url(../images/search1.JPG);
+	
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 63px;
+	border: 0px dashed #000000;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<exam>
+	<实体引用>这里必须使用引用“&lt;”、“&gt;”、“&amp;”</实体引用>
+	<CDATA标记>
+	<![CDATA[
+		这里可以正常输出“<”、“>”、“&”。
+	]]>
+	</CDATA标记>
+</exam>

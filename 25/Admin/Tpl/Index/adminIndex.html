@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>后台管理</title>
+<link href="__ROOT__/Public/Css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<table id="__01" width="960" height="541" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="3">
+			<img src="__ROOT__/Public/images/_html_01.gif" width="217" height="65" alt=""></td>
+		<td colspan="2">
+			<img src="__ROOT__/Public/images/_html_02.gif" width="743" height="65" border="0" usemap="#Map" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="__ROOT__/Public/images/_html_03.gif" width="960" height="26" alt=""></td>
+	</tr>
+	<tr>
+		<td width="138" height="425" background="__ROOT__/Public/images/_html_08.jpg" align="center" valign="top">
+        <table width="135" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		    <td width="10">&nbsp;</td>
+		    <td width="120" height="25" align="center"><a href="__URL__/adminIndex?type_link=data&handle=insert">数据添加</a></td>
+		    <td width="5"></td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center"><a href="__URL__/adminIndex?type_link=data&handle=admin">数据管理</a></td>
+		    <td>&nbsp;</td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center">&nbsp;</td>
+		    <td>&nbsp;</td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center"><a href="__URL__/adminIndex?type_link={$Think.get.type_link }&handle=insert">类别添加</a></td>
+		    <td>&nbsp;</td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center"><a href="__URL__/adminIndex?type_link={$Think.get.type_link }&handle=admin">类别管理</a></td>
+		    <td>&nbsp;</td>
+	      </tr>
+          <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center">&nbsp;</td>
+		    <td>&nbsp;</td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center"><a href="__URL__/logout">退出</a></td>
+		    <td>&nbsp;</td>
+	      </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td width="120" height="25" align="center">&nbsp;</td>
+		    <td>&nbsp;</td>
+	      </tr>
+
+	    </table>
+        </td>
+		<td rowspan="4" width="24" height="425" background="__ROOT__/Public/images/_html_05.gif">
+		</td>
+		<td colspan="2" rowspan="4" width="759" height="425"
+			align="center" valign="top">
+			<if condition="($_GET['type_link'] eq 'high')">
+				<include file="./Admin/Tpl/Index/high.html" />
+
+			<elseif condition="($_GET['type_link'] eq 'middle')"/>
+				<include file="./Admin/Tpl/Index/middle.html" />
+
+			<elseif condition="($_GET['type_link'] eq 'elementary')"/>
+				<include file="./Admin/Tpl/Index/elementary.html" />
+
+			<elseif condition="($_GET['type_link'] eq 'small')"/>
+				<include file="./Admin/Tpl/Index/elementary.html" />
+
+			<else />
+				<include file="./Admin/Tpl/Index/data.html" />
+			</if>
+		</td>
+		<td rowspan="4" width="39" height="425" background="__ROOT__/Public/images/_html_07.gif"></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="__ROOT__/Public/images/_html_09.gif" width="138" height="28" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="__ROOT__/Public/images/_html_10.gif" width="138" height="111" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<img src="__ROOT__/Public/images/_html_12.gif" width="960" height="24" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="__ROOT__/Public/images/分隔符.gif" width="138" height="1" alt=""></td>
+		<td>
+			<img src="__ROOT__/Public/images/分隔符.gif" width="24" height="1" alt=""></td>
+		<td>
+			<img src="__ROOT__/Public/images/分隔符.gif" width="55" height="1" alt=""></td>
+		<td>
+			<img src="__ROOT__/Public/images/分隔符.gif" width="704" height="1" alt=""></td>
+		<td>
+			<img src="__ROOT__/Public/images/分隔符.gif" width="39" height="1" alt=""></td>
+	</tr>
+</table>.......
+
+<map name="Map">
+  <area shape="rect" coords="35,24,126,55" href="__URL__/adminIndex?type_link=high">
+  <area shape="rect" coords="163,21,258,53" href="__URL__/adminIndex?type_link=middle">
+  <area shape="rect" coords="294,21,388,55" href="__URL__/adminIndex?type_link=elementary">
+  <area shape="rect" coords="429,26,528,53" href="__URL__/adminIndex?type_link=small">
+  <area shape="rect" coords="568,22,660,53" href="__URL__/adminIndex?type_link=data">
+</map>
+</body>
+</html>

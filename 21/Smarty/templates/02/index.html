@@ -1,0 +1,15 @@
+<html>
+<head>
+{*  页面的标题变量$title  *}
+<title>{ $title }</title>
+</head>
+<body>
+购书信息：<p>
+{*  使用索引取得数组的第一个元素值  *}
+图书类别：{ $arr[0] }<br />
+{*  使用键值取得第二个数组元素值  *}
+图书名称：{ $arr.name }<br />
+{*  使用键值取得二维数组的元素值  *}
+图书单价：{ $arr.unit_price.price }/{ $arr.unit_price.unit }
+</body>
+</html>

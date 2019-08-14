@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+table{
+	width:450px;
+	border:2px solid red;
+}
+.one{
+	background-color: #8EDAF3;
+	text-align: center;
+	font-family: "楷体_gb2312";
+}
+a{
+	font-family: "楷体_gb2312";
+	font-size: 13px;
+}
+.two{
+	border:0;
+	background-color: #e7e7e7;
+	color:red
+}

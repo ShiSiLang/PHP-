@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>__autoload()</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: 12px;
+}
+body {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+-->
+</style></head>
+<body>
+<?php
+	function __autoload($class_name){
+		$class_path = $class_name.'.class.php';
+		if(file_exists($class_path)){
+			include_once($class_path);
+		}else
+			echo '类路径错误';
+	}
+	$myBook = new SportObject("江山代有才人出，各领风骚数百年");
+	echo $myBook;
+?>
+</body>
+</html>

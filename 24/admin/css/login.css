@@ -1,0 +1,27 @@
+/* CSS Document */
+body {
+	font-size: 12px;
+	margin-top: 0px;
+}
+#login #user,#pwd {
+	margin: 0px;
+	padding: 0px;
+	height: 18px;
+	width: 116px;
+	border: 1px solid #e8f4ff;
+	background-color:#ffffff;
+}
+#login #enter,#reset {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	height: 22px;
+	width: 60px;
+	border: 0px solid #FFFFFF;	
+}
+#login #reset {
+	background-image: url(../images/admin_02.gif);
+}
+#login #enter {
+	background-image: url(../images/admin_03.gif);
+}

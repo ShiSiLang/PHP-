@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+table{
+	width: 400px;
+}
+td{
+	border:1px solid #30ADEE;
+	text-align: center;
+	font-family: "楷体_gb2312"
+}
+.one{
+	background-color: yellow;
+}

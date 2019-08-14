@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户浏览</title>
+<style type="text/css">
+<!--
+.title {
+	font-weight: bold;
+	font-size: 13px;
+}
+.content {
+	font-size: 12px;
+}
+#td {
+	text-align: right;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="405" border="1" cellpadding="1" cellspacing="1" bgcolor="#99CC33" bordercolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#FFFFFF" colspan="3">&nbsp;</td>
+  </tr>
+  <tr class="title">
+    <td bgcolor="#FFFFFF" width="44">ID</td>
+    <td bgcolor="#FFFFFF" width="120">用户名</td>
+    <td bgcolor="#FFFFFF" width="223">密码</td>
+  </tr>
+  <volist name='select' id='user' >
+  <tr class="content">
+    <td bgcolor="#FFFFFF">&nbsp;{$user.id}</td>
+    <td bgcolor="#FFFFFF">&nbsp;{$user.user}</td>
+    <td bgcolor="#FFFFFF">&nbsp;{$user.address}</td>
+  </tr>
+  </volist>
+</table>
+</body>
+</html>

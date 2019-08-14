@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="Book.css"?>
+<!--  下面的标签<计算机图书>就是这个XML文档的根目录  -->
+<计算机图书>
+	<PHP>
+		 <书名>PHP程序开发范例宝典</书名>
+		 <价格 单位="元/本">89.00</价格>
+		 <出版时间>2007-09-01</出版时间>
+	</PHP>
+</计算机图书>

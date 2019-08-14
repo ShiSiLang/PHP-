@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>解决smarty中truncate方法截取中文乱码</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+     <table width="383" height="183" border="0">
+           <tr>
+             <td>{section name=id loop=$arr}
+         	<img src="images/man.JPG" width="14" height="11" border="0" /><a href="#?id={$arr[id].id}">{$arr[id].title|truncate:8:"..."}</a><br />
+         {/section} </td>
+             <td>{section name=ids loop=$arr}
+         	<img src="images/man.JPG" width="14" height="11" border="0" /><a href="#?id={$arr[ids].id}">{$arr[ids].title}</a><br />
+         {/section} </td>
+           </tr>
+         </table>
+</body>
+</html>
+

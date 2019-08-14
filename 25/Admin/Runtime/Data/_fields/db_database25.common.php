@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'id', 1 => 'highid', 2 => 'middleid', 3 => 'elementaryid', 4 => 'smallid', 5 => 'title', 6 => 'href', '_autoinc' => true, '_pk' => 'id', '_type' => array ( 'id' => 'int(4)', 'highid' => 'int(4)', 'middleid' => 'int(4)', 'elementaryid' => 'int(4)', 'smallid' => 'int(4)', 'title' => 'varchar(100)', 'href' => 'text', ), );?>

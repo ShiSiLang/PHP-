@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>将Smarty的配置方法封装到类中</title>
+</head>
+<link rel="stylesheet" href="css/style.css" />
+<body>
+<table width="636" border="1" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#FF8B04">
+  <tr>
+    <td height="33" align="left" valign="middle" bgcolor="#FFFFFF"><img src="images/shop_14.JPG" width="643" height="33" /></td>
+  </tr>
+  <tr>
+    <td height="132" align="left" valign="middle" bgcolor="#FFFFFF">  {if $iscommo=="T"}
+	
+      <table width="372" height="134" border="0" cellspacing="0" cellpadding="0">
+
+      {section name=bookid loop=$arraybook}
+	      <tr>
+            <td width="135" rowspan="5" align="center" valign="middle"><img src="{$arraybook[bookid].pics}" width="95" height="100" alt="{$arraybook[bookid].name}" style="border: 1px solid #f0f0f0;" /></td>
+            <td height="35">图书名称：{$arraybook[bookid].name}</td>
+        </tr>
+          <tr>
+            <td height="23">图书品牌：{$arraybook[bookid].brand}</td>
+        </tr>
+          <tr>
+            <td width="160" height="23">剩余数量：{$arraybook[bookid].stocks}</td>
+        </tr>
+          <tr>
+            <td height="23">市场价：<font color="red">{$arraybook[bookid].m_price}&nbsp;元</font></td>
+        </tr>
+          <tr>
+            <td height="30">会员价格：<font color="#FF0000">{$arraybook[bookid].v_price}&nbsp;元</font></td>
+        </tr>
+      {/section}
+      </table>
+      <hr style="border: 1px solid #f0f0f0;" />
+	 {/if} 
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
